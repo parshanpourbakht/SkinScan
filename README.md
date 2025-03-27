@@ -11,7 +11,6 @@ npm install
 npm start
 ```
 
-
 ## Running Backend
 
 ### 1. Create Virtual Environment
