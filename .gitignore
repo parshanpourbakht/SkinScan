@@ -1,5 +1,5 @@
 # Python virtual environment
 venv/
 
-# Node.js modules
-node_modules/
+# Node.js modules for frontend
+frontend/node_modules/
