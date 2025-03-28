@@ -19,22 +19,39 @@ function App() {
 
   const handleUpload = async () => {
     if (!image) return;
-    
+  
     setLoading(true);
     const formData = new FormData();
-    formData.append("file", image);
-    
+    formData.append("image", image);
+    console.log("Sending image to backend:", image); 
+  
     try {
-      const response = await axios.post("http://localhost:5000/predict", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
+      const response = await axios.post("http://127.0.0.1:5000/predict", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
       });
+    
+      console.log("API response:", response.data); 
       setResult(response.data);
     } catch (error) {
-      console.error("Error uploading image:", error);
-      setResult({ error: "Failed to analyze the image." });
+      console.error("Upload error:", error);
+
+      if (error.response) {
+        console.error("Backend responded with:", error.response.data);
+        setResult({ error: error.response.data.error || "Server responded with an error." });
+      } else if (error.request) {
+        console.error("No response received. Axios request:", error.request);
+        setResult({ error: "No response received from the server." });
+      } else {
+        console.error("Error setting up the request:", error.message);
+        setResult({ error: "Error setting up the request." });
+      }
     }
+  
     setLoading(false);
   };
+  
 
   return (
     <div className="app-container">

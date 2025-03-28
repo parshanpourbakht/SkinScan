@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify
 import tensorflow as tf
+from flask_cors import CORS
 import numpy as np
 from PIL import Image
 import io
 
 app = Flask(__name__)
+CORS(app)
 
 # Load the model
 model = tf.keras.models.load_model("models/skin_scan_model_2.keras")
@@ -57,5 +59,5 @@ def predict():
     })
 
 if __name__ == "__main__":
-    # app.run(debug=True)
-    app.run(host="0.0.0.0", port=5000, debug=True)
+     app.run(debug=True)
+   # app.run(host="0.0.0.0", port=5000, debug=False)
