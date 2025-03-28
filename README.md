@@ -1,6 +1,6 @@
 # SkinScan - AI Dermatology Assistant
 
-## Running Backend
+## Running Frontend
 ### 1. Install dependencies
 ```bash
 npm install
