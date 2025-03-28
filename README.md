@@ -47,9 +47,11 @@ pip install -r requirements.txt
 ### 3. Run Server
 
 Run the python Flask application
+On Mac:
 ```bash 
-Mac : python3 app.py
-Windows : python app.py
-
+ python3 app.py
 ```
-
+On Windows :
+```bash 
+ python app.py
+```
