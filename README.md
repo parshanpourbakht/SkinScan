@@ -48,6 +48,8 @@ pip install -r requirements.txt
 
 Run the python Flask application
 ```bash 
-python3 app.py
+Mac : python3 app.py
+Windows : python app.py
+
 ```
 
