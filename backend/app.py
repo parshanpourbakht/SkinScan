@@ -6,7 +6,7 @@ from PIL import Image
 import io
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "https://parshanpourbakht.github.io/"}})
 
 # Load the model
 model = tf.keras.models.load_model("models/skin_scan_model_2.keras")
