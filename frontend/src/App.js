@@ -26,7 +26,7 @@ function App() {
     console.log("Sending image to backend:", image); 
   
     try {
-      const response = await axios.post("http://44.225.82.129:5000/predict", formData, {
+      const response = await axios.post("https://2of0ar7l5b.execute-api.us-west-2.amazonaws.com/skin-scan/predict", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
