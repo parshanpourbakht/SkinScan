@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SkinScan/static/css/main.2c803efd.css",
-    "main.js": "/SkinScan/static/js/main.a1e21023.js",
+    "main.css": "/SkinScan/static/css/main.3243c6c5.css",
+    "main.js": "/SkinScan/static/js/main.e99a4f17.js",
     "static/js/453.8ab44547.chunk.js": "/SkinScan/static/js/453.8ab44547.chunk.js",
     "index.html": "/SkinScan/index.html",
-    "main.2c803efd.css.map": "/SkinScan/static/css/main.2c803efd.css.map",
-    "main.a1e21023.js.map": "/SkinScan/static/js/main.a1e21023.js.map",
+    "main.3243c6c5.css.map": "/SkinScan/static/css/main.3243c6c5.css.map",
+    "main.e99a4f17.js.map": "/SkinScan/static/js/main.e99a4f17.js.map",
     "453.8ab44547.chunk.js.map": "/SkinScan/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c803efd.css",
-    "static/js/main.a1e21023.js"
+    "static/css/main.3243c6c5.css",
+    "static/js/main.e99a4f17.js"
   ]
 }
