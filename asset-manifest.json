@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/SkinScan/static/css/main.3243c6c5.css",
-    "main.js": "/SkinScan/static/js/main.e99a4f17.js",
-    "static/js/453.8ab44547.chunk.js": "/SkinScan/static/js/453.8ab44547.chunk.js",
+    "main.css": "/SkinScan/static/css/main.3c1d1bcc.css",
+    "main.js": "/SkinScan/static/js/main.a6c61c53.js",
+    "static/js/453.d855a71b.chunk.js": "/SkinScan/static/js/453.d855a71b.chunk.js",
+    "static/media/SkinScanLogo.png": "/SkinScan/static/media/SkinScanLogo.76e9ebe9efae12c8db32.png",
     "index.html": "/SkinScan/index.html",
-    "main.3243c6c5.css.map": "/SkinScan/static/css/main.3243c6c5.css.map",
-    "main.e99a4f17.js.map": "/SkinScan/static/js/main.e99a4f17.js.map",
-    "453.8ab44547.chunk.js.map": "/SkinScan/static/js/453.8ab44547.chunk.js.map"
+    "main.3c1d1bcc.css.map": "/SkinScan/static/css/main.3c1d1bcc.css.map",
+    "main.a6c61c53.js.map": "/SkinScan/static/js/main.a6c61c53.js.map",
+    "453.d855a71b.chunk.js.map": "/SkinScan/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3243c6c5.css",
-    "static/js/main.e99a4f17.js"
+    "static/css/main.3c1d1bcc.css",
+    "static/js/main.a6c61c53.js"
   ]
 }
