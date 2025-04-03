@@ -5,6 +5,9 @@ import numpy as np
 from PIL import Image
 import io
 
+DATA_MEAN = 159.7910267265768
+DATA_STD = 46.388174504200656
+
 app = Flask(__name__)
 CORS(app)
 
@@ -28,7 +31,7 @@ class_order = ['nv', 'mel', 'bkl', 'bcc', 'akiec', 'vasc', 'df']
 # Preprocessing function
 def preprocess_image(image):
     image = image.resize((100, 75))         # Resize to match your dataset
-    image = np.array(image) / 255.0         # Normalize
+    image = (np.array(image) - DATA_MEAN) / DATA_STD        # Normalize
     image = np.expand_dims(image, axis=0)   # Add batch dimension
     return image
 
