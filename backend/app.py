@@ -30,9 +30,9 @@ class_order = ['nv', 'mel', 'bkl', 'bcc', 'akiec', 'vasc', 'df']
 
 # Preprocessing function
 def preprocess_image(image):
-    image = image.resize((100, 75))         # Resize to match your dataset
+    image = image.resize((100, 75))                         # Resize to match your dataset
     image = (np.array(image) - DATA_MEAN) / DATA_STD        # Normalize
-    image = np.expand_dims(image, axis=0)   # Add batch dimension
+    image = np.expand_dims(image, axis=0)                   # Add batch dimension
     return image
 
 @app.route("/predict", methods=["POST"])
